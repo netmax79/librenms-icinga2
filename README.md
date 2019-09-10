@@ -16,6 +16,7 @@ I used FQDNs in my setup.
 
 ```bash
 git clone https://github.com/netmax79/librenms-icinga2.git
+cd librenms-icinga2
 cp -a Icinga2 /opt/librenms/html/plugins/
 chown -R librenms:librenms /opt/librenms/html/plugins/Icinga2
 ```
