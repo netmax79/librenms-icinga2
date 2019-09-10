@@ -21,11 +21,12 @@ cp -a Icinga2 /opt/librenms/html/plugins/
 chown -R librenms:librenms /opt/librenms/html/plugins/Icinga2
 ```
 2. create an API user within Icinga2 configuration
+
    See https://icinga.com/docs/icinga2/latest/doc/12-icinga2-api/#authentication 
 
-3. create an librenms API key (librenms setting menue -> API -> API settings
+3. create an librenms API key (librenms setting menu -> API -> API settings)
 
-4. Edit **/opt/librenms/config.php** and add the lines from config.php.example
+4. Edit **/opt/librenms/config.php** and add the lines from **config.php.example**
    adapt the variables to the previously created API login credentials
 
 
