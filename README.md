@@ -29,4 +29,13 @@ chown -R librenms:librenms /opt/librenms/html/plugins/Icinga2
 4. Edit **/opt/librenms/config.php** and add the lines from **config.php.example**
    adapt the variables to the previously created API login credentials
 
+5. You now need to activate the plugin, from your librenms Plugins menu, select Plugin Admin.
+
+6. On the plugin admin page, click on Enable next to the Icinga2 plugin.
+
+## Usage
+
+On each device overview page there will be a box with current monitoring status below the main system informations.
+
+On Overview -> Plugins -> Icinga2 there is a complete overview for all hosts services .
 
