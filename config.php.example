@@ -1,0 +1,4 @@
+$config['icinga2']['api']['username'] = "icinga2-api-user-librenms";
+$config['icinga2']['api']['password'] = "icinga2-api-password-librenms";
+$config['icinga2']['api']['url'] = "https://localhost:5665/v1/";
+$config['icinga2']['librenms']['apikey'] = "librenms-api-key";
