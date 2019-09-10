@@ -39,3 +39,10 @@ On each device overview page there will be a box with current monitoring status 
 
 On Overview -> Plugins -> Icinga2 there is a complete overview for all hosts services .
 
+## How does it look?
+
+### complete overview (all hosts)
+![](https://i.imgur.com/fjTZYBA.png)
+
+### host detail
+![](https://i.imgur.com/2tgigS9.png)
