@@ -106,7 +106,7 @@ class Icinga2 {
 	$auth_header = array(
 			"X-Auth-Token:" .  $config['icinga2']['librenms']['apikey']
 			);
-	$jsonout = Icinga2::curl_request("","",$config['base_url'] . "api/v0/devices?ordre=hostname","",$auth_header); 
+	$jsonout = Icinga2::curl_request("","",$config['base_url'] . "api/v0/devices?order=hostname","",$auth_header); 
 	return $jsonout;
     }
 }
