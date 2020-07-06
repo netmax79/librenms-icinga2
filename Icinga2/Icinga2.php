@@ -68,7 +68,7 @@ class Icinga2 {
         $ic2api_url = $config['icinga2']['api']['url'];
            
         if ($host != "all" ) {
-            $jsonout = Icinga2::curl_request($ic2api_user,$ic2api_password, $ic2api_url . "objects/services?filter=match(%22" . $host . "%22,host.name)&attrs=name&attrs=state");
+            $jsonout = Icinga2::curl_request($ic2api_user,$ic2api_password, $ic2api_url . "objects/services?filter=match(%22" . $host . "%22,host.name)&attrs=name&attrs=state&attrs=last_check_result");
             
         } else {
             $jsonout = "NOT IMPL";
@@ -78,8 +78,9 @@ class Icinga2 {
         foreach ($ic2data['results'] as $attr ) {
             $name = $attr['attrs']['name'];
             $state = $attr['attrs']['state'];
+	    $check_result = $attr['attrs']['last_check_result']['output'];
             $color = Icinga2::ic2_state_color($state);
-            $outdata .= '<tr><td bgcolor="'.$color.'">'.$name.'</td></tr>';
+            $outdata .= '<tr><td bgcolor="'.$color.'">'.$name.'</td><td>'.$check_result.'</td></tr>';
         }
         $outdata .= '</table>';
         return print_r($outdata,true);
