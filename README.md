@@ -42,7 +42,7 @@ On Overview -> Plugins -> Icinga2 there is a complete overview for all hosts ser
 ## How does it look?
 
 ### complete overview (all hosts)
-![](https://i.imgur.com/fjTZYBA.png)
+![](screenshots/all-hosts.png)
 
 ### host detail
-![](https://i.imgur.com/2tgigS9.png)
+![](screenshots/host-overview.png)
