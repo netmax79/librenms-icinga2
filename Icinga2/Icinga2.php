@@ -14,7 +14,7 @@ class Icinga2 {
             }
             if ( preg_match('/^https:/i',$url) ) {
                     curl_setopt($tuCurl, CURLOPT_SSL_VERIFYPEER, FALSE);
-                    curl_setopt($curl, CURLOPT_PORT, 443); 
+                    curl_setopt($curl, CURLOPT_PORT, $port); 
             } else {
                     curl_setopt($tuCurl, CURLOPT_PORT, $port);
             }
