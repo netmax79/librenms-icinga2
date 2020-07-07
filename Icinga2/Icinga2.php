@@ -82,7 +82,7 @@ class Icinga2 {
             $state = $attr['attrs']['state'];
 	    $check_result = $attr['attrs']['last_check_result']['output'];
             $color = Icinga2::ic2_state_color($state);
-            $outdata .= '<tr><td bgcolor="'.$color.'">'.$name.'</td><td>'.$check_result.'</td></tr>';
+            $outdata .= '<tr><td width=20% bgcolor="'.$color.'">'.$name.'</td><td>'.$check_result.'</td></tr>';
         }
         $outdata .= '</table>';
         return print_r($outdata,true);
