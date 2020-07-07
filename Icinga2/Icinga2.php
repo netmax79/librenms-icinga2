@@ -25,11 +25,13 @@ class Icinga2 {
             curl_setopt($tuCurl, CURLOPT_RETURNTRANSFER,0);
 
             if ( is_array($postfields) ) {
+		/*
                     foreach($postfields as $key=>$value) {
                             $fields_string .= $key.'='.$value.'&';
                     }
                     rtrim($fields_string, '&');
-
+		*/
+		    $fields_string = json_encode($postfields);
                     curl_setopt($tuCurl,CURLOPT_POST, count($postfields));
                     curl_setopt($tuCurl,CURLOPT_POSTFIELDS, $fields_string);
             } else {
